@@ -55,6 +55,26 @@ namespace TheNorthernHandyman.Controllers
             }
         }
 
+        [HttpGet]
+        public ActionResult ImagesSideBar()
+        {
+            try
+            {
+                //DirectoryInfo dirInfo = new DirectoryInfo(Server.MapPath(@"~\Content/Images"));
+                //List<FileInfo> files = dirInfo.GetFiles().ToList();
+
+
+                //return View(files);
+                ViewBag.Images = Directory.EnumerateFiles(Server.MapPath("~/Content/Images")).Select(fn => "~/Content/Images/" + Path.GetFileName(fn));
+
+                return PartialView(ViewBag.Images);
+            }
+            catch (Exception ex)
+            {
+                throw ex.InnerException;
+            }
+        }
+
 
 
     }

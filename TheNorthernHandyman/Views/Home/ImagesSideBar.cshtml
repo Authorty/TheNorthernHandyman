@@ -1,0 +1,13 @@
+﻿<div class="col-md-offset-10">
+
+    @foreach (var image in (IEnumerable<string>)ViewBag.Images)
+    {
+
+        <img src="@Url.Content(image)" alt="TheNorthernHandyman" />
+
+
+    }
+</div>
+
+
+

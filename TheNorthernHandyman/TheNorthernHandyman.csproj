@@ -276,6 +276,7 @@
     <Content Include="Views\Shared\_NavigationBar.cshtml" />
     <Content Include="Views\Home\Services.cshtml" />
     <Content Include="Views\Home\Images.cshtml" />
+    <Content Include="Views\Home\ImagesSideBar.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
