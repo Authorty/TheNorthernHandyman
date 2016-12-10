@@ -1,11 +1,12 @@
 ﻿@{
     ViewBag.Title = "Home Page";
+    <h3>@ViewBag.Message</h3>
 }
 
-<div class="jumbotron">    
+<div class="jumbotron">   
+        
     <h1>The Northern Handyman...</h1>
         <p class="lead">
-            <h3>
                 Is a home based buisness and is centered around focusing on doing
                 the job right the FIRST time with being safety conscious and curtious.
                 Feel free to contact us for any services listed on our Services page.
@@ -13,10 +14,9 @@
                 enviornmentally friendly.We do not burn debris or leave it lying around.
                 If needed we can haul away debris. We offer topsoil and provide seeding when
                 necessary.
-            </h3>
         </p>
-
-    <p><a href="https://www.facebook.com/NorthernHandyman/" class="btn btn-primary btn-xs,btn-group btn-group-justified"> Find Out More</a></p>
+    <p><strong>SPECIAL:</strong> 10% Discount for Veterans and Senior Citizens! 20% for disabled.</p>
+    <p><a href="https://www.facebook.com/NorthernHandyman/" class="btn btn-primary btn-xs"> Find Out More</a></p>
 
 </div>
 
@@ -24,21 +24,37 @@
 <div class="row">
 
     <div class="col-md-4">
-        <h2>Videos...</h2>
+        <h2>Landscaping</h2>
+            <p>
+                Landscaping has been my passion for many years, its more then 
+                just clearing out existing shrubbery, but what it can be shaped into.
+                I do every job as if it was my home, which means i’m going to do 
+                it right the first time.
+            </p>
             <p><a class="btn btn-default" href="https://www.facebook.com/NorthernHandyman/videos/?ref=page_internal">Bring Me To Videos &raquo;</a></p>
      </div>
                 <div class="col-md-4">
-                     <h2>Gallery...</h2>
-                     <p></p>
+                     <h2>Tree Removal</h2>
+                     <p>
+                        We are able to cut and remove all sizes of tree, from small pines to
+                        large oaks we have the capabilities to finish the job. We remove Trees,
+                        brush, limb’s and even provide stump and leaf removal and make your yard 
+                        look as if the tree was never there.
+                     </p>
                      <p><a class="btn btn-default" href="https://www.facebook.com/NorthernHandyman/photos/">Bring Me To Photos &raquo;</a></p>
                 </div>
             <div class="col-md-4">
-        <h2>Services...</h2>
-        
+        <h2>Snow Removal</h2>
+            <p>
+                Living in Wisconsin, Snow is a part of life. The northern handyman 
+                can take the stress of removing snow at your business or home and make 
+                it a thing of the past. We have 2 plow’s and a skid steer with 
+                an 84″ bucket for all your snow removal needs.
+            </p>
         <p><a class="btn btn-default" href="http://go.microsoft.com/fwlink/?LinkId=301867">Learn more &raquo;</a></p>
     </div>
 </div>
 
 <footer>
-    <p>&copy; @DateTime.Now.Year - TheNorthernHandyman </p>
+    <p><small>&copy; @DateTime.Now.Year - TheNorthernHandyman</small> </p>
 </footer>
