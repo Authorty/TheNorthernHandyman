@@ -1,69 +1,103 @@
 ﻿@{
-    ViewBag.Title = "Home Page";
+
+    ViewBag.Title = "TheNorthernHandyman";
     <h3>@ViewBag.Message</h3>
 }
 
-<div class="jumbotron">
 
-    <h1>The Northern Handyman...</h1>
-    <p class="lead">
-        Is a home based buisness and is centered around focusing on doing
-        the job right the FIRST time with being safety conscious and curtious.
-        Feel free to contact us for any services listed on our Services page.
-        We are Fully insured and our company strongly believes in being
-        enviornmentally friendly.We do not burn debris or leave it lying around.
-        If needed we can haul away debris. We offer topsoil and provide seeding when
-        necessary.
-    </p>
-    <p><strong>SPECIAL:</strong> 10% Discount for Veterans and Senior Citizens! 20% for disabled.</p>
-    
 
-    <p><a class="btn btn-default btn-xs" href="https://www.facebook.com/NorthernHandyman/"><small>Find Out More</small> &raquo;</a></p>
 
+
+
+
+
+
+
+    <div class="jumbotron">
+
+        <h1>The Northern Handyman...</h1>
+        <p class="lead">
+            Is a home based buisness and is centered around focusing on doing
+            the job right the FIRST time with being safety conscious and curtious.
+            Feel free to contact us for any services listed on our Services page.
+            We are Fully insured and our company strongly believes in being
+            enviornmentally friendly.We do not burn debris or leave it lying around.
+            If needed we can haul away debris. We offer topsoil and provide seeding when
+            necessary.
+        </p>
+        <p><strong>SPECIAL:</strong> 10% Discount for Veterans and Senior Citizens! 20% for disabled.</p>
+
+
+        <p><a class="btn btn-default btn-xs" href="https://www.facebook.com/NorthernHandyman/"><small>Find Out More</small> &raquo;</a></p>
+
+    </div>
+
+
+    <div class="row">
+
+        <div class="col-md-4">
+            <h2>*Landscaping</h2>
+            <p>
+                Landscaping has been my passion for many years, its more then
+                just clearing out existing shrubbery, but what it can be shaped into.
+                I do every job as if it was my home, which means i’m going to do
+                it right the first time.
+            </p>
+        </div>
+
+        <div class="col-md-4">
+            <h2>Tree Removal</h2>
+            <p>
+                We are able to cut and remove all sizes of tree, from small pines to
+                large oaks we have the capabilities to finish the job. We remove Trees,
+                brush, limb’s and even provide stump and leaf removal and make your yard
+                look as if the tree was never there.
+            </p>
+        </div>
+        <div class="col-md-4">
+            <h2>Snow Removal</h2>
+            <p>
+                Living in Wisconsin, Snow is a part of life. The northern handyman
+                can take the stress of removing snow at your business or home and make
+                it a thing of the past. We have 2 plow’s and a skid steer with
+                an 84″ bucket for all your snow removal needs.
+            </p>
+        </div>
+        <div class="col-md-4">
+            <h2>*Mowing</h2>
+            <p>
+                We provide mowing services for commercial and residential locations.
+                We remove all the garbage in the area prior to mowing and follow up with
+                weed whacking around any hard to reach areas. After which we clean up any
+                leaves or debris to keep your landscape looking professional and clean.
+            </p>
+        </div>
+    </div>
+<div class="navbar navbar-inverse navbar-left">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+
+
+
+        </div>
+        <div class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+                <li>@Html.ActionLink("Home", "Index", "Home")</li>
+                <li>@Html.ActionLink("About", "About", "Home")</li>
+                <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
+                <li>@Html.ActionLink("Services", "Services", "Home")</li>
+                <li>@Html.ActionLink("Images", "Images", "Home")</li>
+            </ul>
+            @Html.Partial("_LoginPartial")
+        </div>
+    </div>
 </div>
 
-
-<div class="row">
-
-    <div class="col-md-4">
-        <h2>Landscaping</h2>
-        <p>
-            Landscaping has been my passion for many years, its more then
-            just clearing out existing shrubbery, but what it can be shaped into.
-            I do every job as if it was my home, which means i’m going to do
-            it right the first time.
-        </p>
-    </div>
-
-    <div class="col-md-4">
-        <h2>Tree Removal</h2>
-        <p>
-            We are able to cut and remove all sizes of tree, from small pines to
-            large oaks we have the capabilities to finish the job. We remove Trees,
-            brush, limb’s and even provide stump and leaf removal and make your yard
-            look as if the tree was never there.
-        </p>
-    </div>
-    <div class="col-md-4">
-        <h2>Snow Removal</h2>
-        <p>
-            Living in Wisconsin, Snow is a part of life. The northern handyman
-            can take the stress of removing snow at your business or home and make
-            it a thing of the past. We have 2 plow’s and a skid steer with
-            an 84″ bucket for all your snow removal needs.
-        </p>
-    </div>
-    <div class="col-md-4">
-        <h2>Mowing</h2>
-        <p>
-            We provide mowing services for commercial and residential locations.
-            We remove all the garbage in the area prior to mowing and follow up with
-            weed whacking around any hard to reach areas. After which we clean up any
-            leaves or debris to keep your landscape looking professional and clean.
-        </p>
-    </div>
-</div>   
-
-            <footer>
-                <p><small>&copy; @DateTime.Now.Year - TheNorthernHandyman</small> </p>
-            </footer>
+    <footer>
+        <p><small>&copy; @DateTime.Now.Year - TheNorthernHandyman</small> </p>
+    </footer>

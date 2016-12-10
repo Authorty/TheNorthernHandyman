@@ -1,6 +1,9 @@
 ﻿
 
-
+@{
+    ViewBag.Title = "About | TheNorthernHandyman";
+   
+}
 
 <h3>@ViewBag.Message</h3>
 
@@ -54,5 +57,31 @@
     </div>
     </div>
 <footer>
-    <p><small> @DateTime.Now.Year - TheNorthernHandyman/About </small></p>
+
+    <div class="navbar navbar-inverse navbar-left">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+
+
+
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li>@Html.ActionLink("Home", "Index", "Home")</li>
+                    <li>@Html.ActionLink("About", "About", "Home")</li>
+                    <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
+                    <li>@Html.ActionLink("Services", "Services", "Home")</li>
+                    <li>@Html.ActionLink("Images", "Images", "Home")</li>
+                </ul>
+                @Html.Partial("_LoginPartial")
+            </div>
+        </div>
+    </div>
+
+    <p><small> @DateTime.Now.Year - TheNorthernHandyman|About </small></p>
 </footer>
