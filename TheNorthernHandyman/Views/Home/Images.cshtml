@@ -1,0 +1,24 @@
+﻿
+@{
+    ViewBag.Title = "Images";
+}
+
+<h2>Images</h2>
+
+<div class="jumbotron">
+
+        @foreach (var image in (IEnumerable<string>)ViewBag.Images)
+        {
+
+            <img src="@Url.Content(image)" alt ="TheNorthernHandyman" />
+            
+        }
+
+
+</div>
+@*@foreach (FileInfo fi in Model)
+{
+    string test = fi.FullName;
+    <img src="@Url.Content(test)" />
+
+}*@

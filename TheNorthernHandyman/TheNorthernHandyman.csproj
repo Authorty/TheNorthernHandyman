@@ -212,6 +212,10 @@
     <Content Include="Content\bootstrap-sandstone.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\Images\BobCat_Tree.jpg" />
+    <Content Include="Content\Images\BrushRemoval.jpg" />
+    <Content Include="Content\Images\Johndeere Sweeper.jpg" />
+    <Content Include="Content\Images\SnowRemoval.PNG" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
@@ -271,6 +275,7 @@
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
     <Content Include="Views\Shared\_NavigationBar.cshtml" />
     <Content Include="Views\Home\Services.cshtml" />
+    <Content Include="Views\Home\Images.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
