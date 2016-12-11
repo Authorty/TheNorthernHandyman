@@ -75,7 +75,30 @@ namespace TheNorthernHandyman.Controllers
             }
         }
 
+        public ActionResult SkidSteerPictures()
+        {
+            return View();
 
+        }
+
+        public ActionResult SnowRemovalPictures()
+        {
+            return View();
+
+        }
+
+        public ActionResult TreeRemovalPictures()
+        {
+            return View();
+
+        }
+
+        public ActionResult MowingPictures()
+        {
+            return View();
+
+        }
 
     }
+
 }

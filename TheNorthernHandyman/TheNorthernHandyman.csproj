@@ -277,9 +277,14 @@
     <Content Include="Views\Home\Services.cshtml" />
     <Content Include="Views\Home\Images.cshtml" />
     <Content Include="Views\Home\ImagesSideBar.cshtml" />
+    <Content Include="Views\Home\SkidSteerPictures.cshtml" />
+    <Content Include="Views\Home\SnowRemovalPictures.cshtml" />
+    <Content Include="Views\Home\TreeRemovalPictures.cshtml" />
+    <Content Include="Views\Home\MowingPictures.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Views\Pictures\" />
     <Folder Include="Views\Services\" />
   </ItemGroup>
   <ItemGroup>

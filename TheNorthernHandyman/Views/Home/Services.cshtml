@@ -21,9 +21,10 @@
                  Landscaping. <br />
              </h4>
 
-         <p><a class="btn btn-default btn-xs" href="#"><small>Pictures</small> &raquo;</a></p>
+         
+         @Html.ActionLink("Pictures", "SkidSteerPictures", "Home", new { area = "" } , new { @class = "btn btn-default btn-xs" })
             </p>
-
+         
          <h2><strong> Tree Removal</strong></h2>
          <p>
              <h4>
@@ -33,7 +34,7 @@
                  Brush removal and chipping. <br />
                  Small & Large trees. <br />
              </h4>
-         <p><a class="btn btn-default btn-xs" href="#"><small>Pictures</small> &raquo;</a></p>
+         @Html.ActionLink("Pictures", "TreeRemovalPictures", "Home", new { area = "" }, new { @class = "btn btn-default btn-xs" })
                </p>
      </div>
      
@@ -48,7 +49,7 @@
                    84″ skid steer snow blowing &8′ bucket. <br />
                    V bottom salter.<br />
                </h4>
-           <p><a class="btn btn-default btn-xs" href="#"><small>Pictures</small> &raquo;</a></p>
+               @Html.ActionLink("Pictures", "SnowRemovalPictures", "Home", new { area = "" }, new { @class = "btn btn-default btn-xs" })
            </p>
            <h2><strong>Mowing</strong> </h2>
            <p>
@@ -57,7 +58,7 @@
                    Weed whacking. <br />
                    Leaf removal. <br />
                </h4>
-           <p><a class="btn btn-default btn-xs" href="#"><small>Pictures</small> &raquo;</a></p>
+           @Html.ActionLink("Pictures", "MowingPictures", "Home", new { area = "" }, new { @class = "btn btn-default btn-xs" })
            </p>
        </div>
 
@@ -73,30 +74,7 @@
      </div>
 </div>
 
-<div class="navbar navbar-inverse navbar-left">
-    <div class="container">
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
 
-
-
-        </div>
-        <div class="navbar-collapse collapse">
-            <ul class="nav navbar-nav">
-                <li>@Html.ActionLink("Home", "Index", "Home")</li>
-                <li>@Html.ActionLink("About", "About", "Home")</li>
-                <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
-                <li>@Html.ActionLink("Services", "Services", "Home")</li>
-                <li>@Html.ActionLink("Images", "Images", "Home")</li>
-            </ul>
-            @Html.Partial("_LoginPartial")
-        </div>
-    </div>
-</div>
 
 <footer>
     <p><small>&copy; @DateTime.Now.Year - TheNorthernHandyman|Services </small></p>
