@@ -198,7 +198,6 @@
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
-    <Compile Include="Controllers\ServicesController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -214,8 +213,13 @@
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\Images\BobCat_Tree.jpg" />
     <Content Include="Content\Images\BrushRemoval.jpg" />
+    <Content Include="Content\Images\close.png" />
     <Content Include="Content\Images\Johndeere Sweeper.jpg" />
+    <Content Include="Content\Images\loading.gif" />
+    <Content Include="Content\Images\next.png" />
+    <Content Include="Content\Images\prev.png" />
     <Content Include="Content\Images\SnowRemoval.PNG" />
+    <Content Include="Content\lightbox.css" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
@@ -235,6 +239,7 @@
     <Content Include="Scripts\jquery.validate.min.js" />
     <Content Include="Scripts\jquery.validate.unobtrusive.js" />
     <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
+    <Content Include="Scripts\lightbox.min.js" />
     <Content Include="Scripts\modernizr-2.6.2.js" />
     <Content Include="Scripts\respond.js" />
     <Content Include="Scripts\respond.min.js" />
