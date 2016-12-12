@@ -4,8 +4,12 @@
 }
 
 <h2>Images</h2>
+<head>
+    <link href="~/Content/lightbox.css"  rel="stylesheet" />
+</head>
 
 <div class="jumbotron">
+
 
             @foreach (var image in (IEnumerable<string>)ViewBag.Images)
             {
@@ -17,6 +21,8 @@
 
 
 </div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="~/Scripts/lightbox.min.js"></script>
 
 <p><small>&copy; @DateTime.Now.Year - TheNorthernHandyman|Contact </small></p>
 

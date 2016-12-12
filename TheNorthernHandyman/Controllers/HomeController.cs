@@ -98,30 +98,30 @@ namespace TheNorthernHandyman.Controllers
             return View();
 
         }
-        [HttpPost]
-        public ActionResult MowingPictures(HttpPostedFileBase file)
+        //[HttpPost]
+        //public ActionResult MowingPictures(HttpPostedFileBase file)
 
-        {
-            var path = "";
-                if(file=null)
-            {
-                if (file.ContentLength > 0)
-                {
-                    if (Path.GetExtension(file.FileName).ToLower() == ".jpg"
-                       || (Path.GetExtension(file.FileName).ToLower() == ".png"
-                            || (Path.GetExtension(file.FileName).ToLower() == ".gif"
-                            || (Path.GetExtension(file.FileName).ToLower() == ".jpeg"))))
-                            {
-                        path = Path.Combine(Server.MapPath("~/Content/Images"), file.FileName);
-                        file.SaveAs(path);
-                        ViewBag.UploadSuccess = true;
-                    }
-                }
+        //{
+        //    //var path = "";
+        //    //    if(file=null)
+        //    //{
+        //    //    if (file.ContentLength > 0)
+        //    //    {
+        //    //        if (Path.GetExtension(file.FileName).ToLower() == ".jpg"
+        //    //           || (Path.GetExtension(file.FileName).ToLower() == ".png"
+        //    //                || (Path.GetExtension(file.FileName).ToLower() == ".gif"
+        //    //                || (Path.GetExtension(file.FileName).ToLower() == ".jpeg"))))
+        //    //                {
+        //    //            path = Path.Combine(Server.MapPath("~/Content/Images"), file.FileName);
+        //    //            file.SaveAs(path);
+        //    //            ViewBag.UploadSuccess = true;
+        //    //        }
+        //    //    }
 
-            }
+       //   }
 
         }
 
-    }
+
 
 }
