@@ -5,51 +5,47 @@
 
 
 <div class="jumbotron">
-
-    <a href="http://localhost:49360/Home/Services" class="btn btn-link">Back</a>
+    @Html.ActionLink("Back", "Services", "Home", new { area = "" }, new { @class = "btn btn-default btn-xs" })
     <div class="gallery">
         <div class="row">
             <h3>Skid Steer-Snow Blower</h3>
-            <div class="col-lg-3">
-                <a href="~/Content/Images/SnowRemoval.PNG" data-title="Skid Steer- 84 &#34 Snow Blower Attachment" data-lightbox="SkidSteerSnowRemoval">
-                    <img src="~/Content/Images/SnowRemoval.PNG" width="200" height="45" class="img-thumbnail" />
-                </a>
-            </div>
+                <div class="col-lg-3">
+                    <a href="~/Content/Images/SnowRemoval.PNG" data-title="Skid Steer- 84 &#34 Snow Blower Attachment" data-lightbox="SkidSteerSnowRemoval">
+                        <img src="~/Content/Images/SnowRemoval.PNG" width="200" height="45" class="img-thumbnail" />
+                    </a>
+                </div>
         </div>
-
     </div>
     <div class="gallery">
         <div class="row">
             <h3> Parking Lot/Driveway Sweeping</h3>
-            <div class="col-lg-3">
-                <a href="~/Content/Images/Sweeper.PNG" data-title="RetaingWall During" data-lightbox="SkidSteerSweeper">
-                    <img src="~/Content/Images/Sweeper.PNG" width="200" height="45" class="img-thumbnail" />
-                </a>
-            </div>
-            </div>
-       
-
-            <div class="gallery">
-                <div class="row">
-                    <h3> LandScaping</h3>
-                    <div class="col-lg-3">
-                        <a href="~/Content/Images/RetainingWall3.jpg" data-title="RetaingWall During" data-lightbox="SkidSteerLandScaping">
-                            <img src="~/Content/Images/RetainingWall3.jpg" width="200" height="45" class="img-thumbnail" />
-                        </a>
-                    </div>
-
-                    <div class="col-lg-3">
-                        <a href="~/Content/Images/RetainingWall.jpg" data-title="RetaingWall" data-lightbox="SkidSteerLandScaping">
-                            <img src="~/Content/Images/RetainingWall.jpg" width="200" height="45" class="img-thumbnail" />
-                        </a>
-                    </div>
-                    <div class="col-lg-3">
-                        <a href="~/Content/Images/RetainingWall2.jpg" data-title="Retainingwall Complete" data-lightbox="SkidSteerLandScaping">
-                            <img src="~/Content/Images/RetainingWall2.jpg" width="200" height="45" class="img-thumbnail" />
-                        </a>
-                    </div>
+                <div class="col-lg-3">
+                    <a href="~/Content/Images/Sweeper.PNG" data-title="RetaingWall During" data-lightbox="SkidSteerSweeper">
+                        <img src="~/Content/Images/Sweeper.PNG" width="200" height="45" class="img-thumbnail" />
+                    </a>
                 </div>
-            </div>
-            <a href="http://localhost:49360/Home/Services" class="btn btn-link">Back</a>
         </div>
     </div>
+    <div class="gallery">
+        <div class="row">
+            <h3> LandScaping</h3>
+                <div class="col-lg-3">
+                    <a href="~/Content/Images/RetainingWall3.jpg" data-title="RetaingWall During" data-lightbox="SkidSteerLandScaping">
+                        <img src="~/Content/Images/RetainingWall3.jpg" width="200" height="45" class="img-thumbnail" />
+                    </a>
+                </div>    
+                <div class="col-lg-3">
+                    <a href="~/Content/Images/RetainingWall.jpg" data-title="RetaingWall" data-lightbox="SkidSteerLandScaping">
+                        <img src="~/Content/Images/RetainingWall.jpg" width="200" height="45" class="img-thumbnail" />
+                    </a>
+                </div>
+                <div class="col-lg-3">
+                    <a href="~/Content/Images/RetainingWall2.jpg" data-title="Retainingwall Complete" data-lightbox="SkidSteerLandScaping">
+                        <img src="~/Content/Images/RetainingWall2.jpg" width="200" height="45" class="img-thumbnail" />
+                    </a>
+                </div>
+        </div>
+    </div>
+    @Html.ActionLink("Back", "Services", "Home", new { area = "" }, new { @class = "btn btn-default btn-xs" })
+</div>
+    

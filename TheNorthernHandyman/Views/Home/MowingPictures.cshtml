@@ -2,21 +2,14 @@
 
 <div class="jumbotron">
     <div class="gallery">
-
+        @Html.ActionLink("Back", "Services", "Home", new { area = "" }, new { @class = "btn btn-default btn-xs" })
         <div class="row">
-            <div class="col-lg-3">
-                @*This Referecnes the Content/ Images Folder*@    @*The Data Lightbox is the Grouping of the picutres.  Its the album name psshh*@
-                <a href="~/Content/Images/BobCat_Tree.jpg" data-title="Test" data-lightbox="MowingPictures">
-                    <img src="~/Content/Images/BobCat_Tree.jpg" width="200" height="45"  class="img-thumbnail" />
-                </a>
-            </div>
             <div class="col-lg-3">
                 <a href="~/Content/Images/Mowing1.jpg" data-title="Test2" data-lightbox="MowingPictures">
                     <img src="~/Content/Images/Mowing1.jpg" width="200" height="45" class="img-thumbnail" />
                 </a>
             </div>
-
+        </div>
+        @Html.ActionLink("Back", "Services", "Home", new { area = "" }, new { @class = "btn btn-default btn-xs" })
     </div>
-    <a href="http://localhost:49360/Home/Services" class="btn btn-link">Back</a>
 </div>
-
