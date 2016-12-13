@@ -5,10 +5,29 @@
 
 <h2>Images</h2>
 <head>
-    <link href="~/Content/lightbox.css"  rel="stylesheet" />
+
 </head>
 
 <div class="jumbotron">
+    <div class="gallery">
+        <div class="row">
+            <div class="col-lg-3">
+                <a href="~/Content/Images/BobCat_Tree.jpg" data-title="Test" data-lightbox="Vacation">
+                    <img src="~/Content/Images/BobCat_Tree.jpg" width="200" class="img-thumbnail" />
+                </a>
+            </div>
+            <div class="col-lg-3">
+                <a href="~/Content/Images/BrushRemoval.jpg" data-title="Test2" data-lightbox="Vacation" >
+                    <img src="~/Content/Images/BrushRemoval.jpg" width="200" class="img-thumbnail"  />
+                </a>
+            </div>
+            <div class="col-lg-3">
+                <a href="~/Content/Images/Johndeere Sweeper.jpg" data-title="BobCat Caption" data-lightbox="Vacation">
+                    <img src="~/Content/Images/Johndeere Sweeper.jpg" width="200" class="img-thumbnail" />
+                </a>
+        </div>
+    </div>
+</div>
 
 
             @foreach (var image in (IEnumerable<string>)ViewBag.Images)
@@ -21,8 +40,7 @@
 
 
 </div>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-<script src="~/Scripts/lightbox.min.js"></script>
+
 
 <p><small>&copy; @DateTime.Now.Year - TheNorthernHandyman|Contact </small></p>
 
