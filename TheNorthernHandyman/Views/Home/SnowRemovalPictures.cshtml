@@ -3,9 +3,8 @@
     ViewBag.Title = "SnowRemovalPictures";
 }
 <div class="jumbotron">
-
-    <div class="gallery">
-
+    @Html.ActionLink(" « Back", "Services", "Home", new { area = "" }, new { @class = "btn btn-default btn-xs" })
+    <div class="gallery">    
         <div class="row">
             <div class="col-lg-3">
                 @*This Referecnes the Content/ Images Folder*@    @*The Data Lightbox is the Grouping of the picutres.  Its the album name psshh*@
@@ -13,13 +12,7 @@
                     <img src="~/Content/Images/SnowRemoval.PNG" width="200" height="45" class="img-thumbnail" />
                 </a>
             </div>
-            
-
         </div>
-
-
-
-
     </div>
-<a href="http://localhost:49360/Home/Services" class="btn btn-link">Back</a>
+    @Html.ActionLink("« Back", "Services", "Home", new { area = "" }, new { @class = "btn btn-default btn-xs" })
 </div>

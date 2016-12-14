@@ -212,11 +212,14 @@
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\Images\BobCat_Tree.jpg" />
-    <Content Include="Content\Images\Brush.jpg" />
     <Content Include="Content\Images\BrushRemoval.jpg" />
     <Content Include="Content\Images\BuissnessCard.jpg" />
     <Content Include="Content\Images\Equipment.jpg" />
     <Content Include="Content\Images\Equipment2.jpg" />
+    <Content Include="Content\Images\Equipment3.jpg" />
+    <Content Include="Content\Images\Equipment4.jpg" />
+    <Content Include="Content\Images\Equipment5.jpg" />
+    <Content Include="Content\Images\Equipment6.jpg" />
     <Content Include="Content\Images\FireWoodPile.jpg" />
     <Content Include="Content\Images\FireWoodPile1.jpg" />
     <Content Include="Content\Images\LimbRemoval1.jpg" />
@@ -325,11 +328,10 @@
     <Content Include="Views\Home\SnowRemovalPictures.cshtml" />
     <Content Include="Views\Home\TreeRemovalPictures.cshtml" />
     <Content Include="Views\Home\MowingPictures.cshtml" />
+    <Content Include="Views\Home\Equipment.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Views\Pictures\" />
-    <Folder Include="Views\Services\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff" />

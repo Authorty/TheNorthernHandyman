@@ -36,6 +36,8 @@
                 </h4>
             </p>
            
+            @Html.ActionLink("Pictures »", "Equipment", "Home", new { area = "" }, new { @class = "btn btn-default btn-xs" })
+      
         </div>
 
         <div class="col-md-4">
@@ -51,8 +53,8 @@
                 </h4>
             </p>
 
-            <p><a class="btn btn-default btn-xs" href="http://localhost:49360/Home/Services">See More &raquo;</a></p>
-
+          
+            @Html.ActionLink("Pictures »", "Services", "Home", new { area = "" }, new { @class = "btn btn-default btn-xs" })
           
         </div>
     </div>
