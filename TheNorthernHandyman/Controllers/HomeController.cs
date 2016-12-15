@@ -5,12 +5,46 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Web;
+using System.Web.Mail;
 using System.Web.Mvc;
+using TheNorthernHandyman.Models;
 
 namespace TheNorthernHandyman.Controllers
 {
     public class HomeController : Controller
     {
+
+        public ActionResult ContactEmail(ContactEmailModels e)
+        {
+
+            if (!String.IsNullOrEmpty(e.Name) && !String.IsNullOrEmpty(e.Message) && !String.IsNullOrEmpty(e.Phone) && !String.IsNullOrEmpty(e.Email))
+            {
+                var emailmessage = new System.Web.Mail.MailMessage()
+                {
+                    Subject = e.Name,
+                    Body = "From: " + e.Name + "\n Phone Number: " + e.Phone + "\n Job Description: " + e.Message,
+                    From = "thenorthernhandyman@thenorthernhandyman.org",
+                    To = "itismejody@gmail.com",
+                    BodyFormat = MailFormat.Text,
+                    Priority = System.Web.Mail.MailPriority.High
+                };
+
+                System.Web.Mail.SmtpMail.SmtpServer = "relay-hosting.secureserver.net";
+                SmtpMail.Send(emailmessage);
+                MessageBox("Email sent successfully!");
+                return RedirectToAction("Index", "Home", null);
+
+            }
+
+                return View(e);
+        }
+
+        public EmptyResult MessageBox(string s)
+        {
+            Response.Write("<script type=\"text/javascript\">alert('" + s + "');</script>");
+            return null;
+        }
+
         public ActionResult Index()
         {
             return View();
@@ -30,6 +64,7 @@ namespace TheNorthernHandyman.Controllers
             return View();
         }
 
+
         public ActionResult Services()
         {
             ViewBag.Message = "Services We Provide...";
@@ -47,6 +82,19 @@ namespace TheNorthernHandyman.Controllers
                 //return View(files);
                 ViewBag.Images = Directory.EnumerateFiles(Server.MapPath("~/Content/Images")).Select(fn => "~/Content/Images/" + Path.GetFileName(fn));
 
+                var emailmessage = new System.Web.Mail.MailMessage()
+                {
+                    Subject = "Test",
+                    Body = "Test",
+                    From = "thenorthernhandyman@thenorthernhandyman.org",
+                    To = "itismejody@gmail.com",
+                    BodyFormat = MailFormat.Text,
+                    Priority = System.Web.Mail.MailPriority.High
+                };
+
+                SmtpMail.SmtpServer = "relay-hosting.secureserver.net";
+                SmtpMail.Send(emailmessage);
+
                 return View();
             }
             catch (Exception ex)
@@ -54,6 +102,7 @@ namespace TheNorthernHandyman.Controllers
                 throw ex.InnerException;
             }
         }
+
 
         [HttpGet]
         public ActionResult ImagesSideBar()
