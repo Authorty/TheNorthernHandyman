@@ -106,24 +106,13 @@ namespace TheNorthernHandyman.Controllers
                 //DirectoryInfo dirInfo = new DirectoryInfo(Server.MapPath(@"~\Content/Images"));
                 //List<FileInfo> files = dirInfo.GetFiles().ToList();
 
+                //var dir = Directory.EnumerateFiles(Server.MapPath("~/Content/Images")).Select(fn => "~/Content/Images/" + Path.GetFileName(fn));
 
                 //return View(files);
                 ViewBag.Images = Directory.EnumerateFiles(Server.MapPath("~/Content/Images")).Select(fn => "~/Content/Images/" + Path.GetFileName(fn));
 
-                var emailmessage = new System.Web.Mail.MailMessage()
-                {
-                    Subject = "Test",
-                    Body = "Test",
-                    From = "thenorthernhandyman@thenorthernhandyman.org",
-                    To = "itismejody@gmail.com",
-                    BodyFormat = MailFormat.Text,
-                    Priority = System.Web.Mail.MailPriority.High
-                };
 
-                SmtpMail.SmtpServer = "relay-hosting.secureserver.net";
-                SmtpMail.Send(emailmessage);
-
-                return View();
+                return View(ViewBag.Images);
             }
             catch (Exception ex)
             {
