@@ -1,8 +1,15 @@
 ﻿
+@{
+    ViewBag.Title = "Mowing | TheNorthernHandyman";
+
+}
+
 
 <div class="jumbotron">
     
-        @Html.ActionLink("« Back", "Services", "Home", new { area = "" }, new { @class = "btn btn-default btn-xs" })
+    <br />
+    @Html.ActionLink(" « BACK", "Services", "Home", new { area = "" }, new { @class = "btn btn-link btn-xs" })
+    <br />
         <div class="gallery">
             <div class="row">
                 <div class="col-lg-3">
@@ -11,6 +18,11 @@
                     </a>
                 </div>
             </div>
-            @Html.ActionLink(" « Back", "Services", "Home", new { area = "" }, new { @class = "btn btn-default btn-xs" })
+            <br />
+            @Html.ActionLink(" « BACK", "Services", "Home", new { area = "" }, new { @class = "btn btn-link btn-xs" })
+            <br />
         </div>
 </div>
+<footer>
+    <p><small>&copy; @DateTime.Now.Year - TheNorthernHandyman | Mowing</small> </p>
+</footer>

@@ -9,7 +9,9 @@
     <h2>Equipment</h2>
     <div class="gallery">
        
-         @Html.ActionLink("« Back" , "About", "Home", new { area = "" } , new { @class = "btn btn-default btn-xs" })
+        <br />
+        @Html.ActionLink(" « BACK", "About", "Home", new { area = "" }, new { @class = "btn btn-link btn-xs" })
+        <br />
         <div class="row">
             <div class="col-lg-3">
                 <a href="~/Content/Images/Equipment.jpg" data-title="" data-lightbox="NorthernHandyman">
@@ -18,7 +20,7 @@
             </div>
             <div class="col-lg-3">
                 <a href="~/Content/Images/Equipment2.jpg" data-title="" data-lightbox="NorthernHandyman">
-                    <img src="~/Content/Images/Equipment2.jpg" width="200" height="45" class="img-thumbnail" />
+                    <img src="~/Content/Images/Equipment2.jpg" width="200" height="22" class="img-thumbnail" />
                 </a>
             </div>
             <div class="col-lg-3">
@@ -42,7 +44,12 @@
                 </a>
             </div>
         </div>
-        @Html.ActionLink("« Back", "About", "Home", new { area = "" }, new { @class = "btn btn-default btn-xs" })  
+        <br />
+        @Html.ActionLink(" « BACK", "About", "Home", new { area = "" }, new { @class = "btn btn-link btn-xs" })
+        <br /> 
       
     </div>
 </div>
+<footer>
+    <p><small>&copy; @DateTime.Now.Year - TheNorthernHandyman | Equipment</small> </p>
+</footer>

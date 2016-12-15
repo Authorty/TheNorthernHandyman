@@ -3404,7 +3404,7 @@ fieldset[disabled] .btn-danger.focus {
   background-color: #ffffff;
 }
 .btn-link {
-  color: #93c54b;
+  color: black;
   font-weight: normal;
   border-radius: 0;
 }
@@ -3425,7 +3425,7 @@ fieldset[disabled] .btn-link {
 }
 .btn-link:hover,
 .btn-link:focus {
-  color: #79a736;
+  color: black;
   text-decoration: underline;
   background-color: transparent;
 }

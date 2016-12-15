@@ -20,7 +20,6 @@
                  Drive way reconstruction.<br />
                  Landscaping. <br />
              </h4>
-         
          @Html.ActionLink("Pictures »", "SkidSteerPictures", "Home", new { area = "" } , new { @class = "btn btn-default btn-xs" })
             </p>
          
@@ -71,10 +70,11 @@
                 </p>
        </div>    
      </div>
+    @Html.ActionLink(" « BACK", "About", "Home", new { area = "" }, new { @class = "btn btn-link btn-xs" })
 </div>
-@Html.ActionLink(" « Back", "About", "Home", new { area = "" }, new { @class = "btn btn-default btn-xs" })
-
-
+<br />
+<br />
+<br />
 <footer>
-    <p><small>&copy; @DateTime.Now.Year - TheNorthernHandyman|Services </small></p>
+    <p><small>&copy; @DateTime.Now.Year - TheNorthernHandyman | Services</small> </p>
 </footer>

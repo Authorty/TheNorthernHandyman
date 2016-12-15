@@ -1,11 +1,13 @@
 ﻿
 @{
-    ViewBag.Title = "SkidSteerPictures";
+    ViewBag.Title = "Skid Steer | TheNorthernHandyman";
 }
 
 
 <div class="jumbotron">
-    @Html.ActionLink(" « Back", "Services", "Home", new { area = "" }, new { @class = "btn btn-default btn-xs" })
+    <br />
+    @Html.ActionLink(" « BACK", "Services", "Home", new { area = "" }, new { @class = "btn btn-link btn-xs" })
+    <br />
     <div class="gallery">
         <div class="row">
             <h3>Skid Steer-Snow Blower</h3>
@@ -46,6 +48,10 @@
                 </div>
         </div>
     </div>
-    @Html.ActionLink(" « Back", "Services", "Home", new { area = "" }, new { @class = "btn btn-default btn-xs" })
+    <br />
+    @Html.ActionLink(" « BACK", "Services", "Home", new { area = "" }, new { @class = "btn btn-link btn-xs" })
+    <br />
 </div>
-    
+    <footer>
+    <p><small>&copy; @DateTime.Now.Year - TheNorthernHandyman | Skid Steer</small> </p>
+</footer>

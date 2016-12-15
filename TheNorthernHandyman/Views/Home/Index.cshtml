@@ -4,7 +4,7 @@
 
 @{
 
-    ViewBag.Title = "TheNorthernHandyman";
+    ViewBag.Title = "Home | TheNorthernHandyman";
     <h3>@ViewBag.Message</h3>
 }
 
@@ -97,11 +97,13 @@
                         </small>
                     </p>
                     @Html.ActionLink("Pictures »", "FireWood", "Home", new { area = "" }, new { @class = "btn btn-default btn-xs" })
+                    <br />
+                    <br />
                 </div>
             </div>
         </div>
         
 
         <footer>
-            <p><small>&copy; @DateTime.Now.Year - TheNorthernHandyman</small> </p>
+            <p><small>&copy; @DateTime.Now.Year - TheNorthernHandyman | Home</small> </p>
         </footer>

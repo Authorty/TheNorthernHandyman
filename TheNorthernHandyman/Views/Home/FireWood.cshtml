@@ -1,22 +1,26 @@
 ﻿
 @{
-    ViewBag.Title = "FireWood";
+    ViewBag.Title = "FireWood | TheNorthernHandyman";
 }
 
 <div class="jumbotron">
 
-    @Html.ActionLink("« Back", "Index", "Home", new { area = "" }, new { @class = "btn btn-default btn-xs" })
+    <br />
+    @Html.ActionLink(" « BACK", "Index", "Home", new { area = "" }, new { @class = "btn btn-link btn-xs" })
+    <br />
     <div class="gallery">
         <div class="row">
             <div class="col-lg-3">
-                <a href="~/Content/Images/FireWoodPile.jpg" data-title="Test2" data-lightbox="MowingPictures">
+                <a href="~/Content/Images/FireWoodPile.jpg" data-title="" data-lightbox="FireWood">
                     <img src="~/Content/Images/FireWoodPile.jpg" width="200" height="45" class="img-thumbnail" />
                 </a>
             </div>
         </div>
-        @Html.ActionLink(" « Back", "Index", "Home", new { area = "" }, new { @class = "btn btn-default btn-xs" })
+        <br />
+        @Html.ActionLink(" « BACK", "Index", "Home", new { area = "" }, new { @class = "btn btn-link btn-xs" })
+        <br />
     </div>
 </div>
 <footer>
-    <p><small>&copy; @DateTime.Now.Year - TheNorthernHandyman|Contact </small></p>
+    <p><small>&copy; @DateTime.Now.Year - TheNorthernHandyman | FireWood</small> </p>
 </footer>
