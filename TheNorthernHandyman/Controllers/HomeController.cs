@@ -16,6 +16,13 @@ namespace TheNorthernHandyman.Controllers
 
         public ActionResult ContactEmail(ContactEmailModels e)
         {
+            string ValidationMessage = String.Empty;
+
+            ViewBag.Name = String.Empty;
+            ViewBag.Email = String.Empty;
+            ViewBag.Phone = String.Empty;
+            ViewBag.Message = String.Empty;
+
 
             if (!String.IsNullOrEmpty(e.Name) && !String.IsNullOrEmpty(e.Message) && !String.IsNullOrEmpty(e.Phone) && !String.IsNullOrEmpty(e.Email))
             {
@@ -36,7 +43,33 @@ namespace TheNorthernHandyman.Controllers
 
             }
 
-                return View(e);
+            if (e.Name == "" || e.Name == null)
+            {
+                ViewBag.Name = "Please add your name";
+            }
+
+
+            if (e.Phone == "" || e.Phone == null)
+            {
+                ViewBag.Phone = "Please add your phone";
+
+            }
+
+
+            if (e.Message == "" || e.Message == null)
+            {
+                ViewBag.Message = "Please add your Message";
+
+            }
+            if (e.Email == "" || e.Message == null)
+            {
+                ViewBag.Email = "Please Add your Email";
+            }
+
+            // TempData["Validation"] = ValidationMessage;
+            //return new JavaScriptResult { Script = "alert('" + ValidationMessage + "');" };
+
+            return View(e);
         }
 
         public EmptyResult MessageBox(string s)
