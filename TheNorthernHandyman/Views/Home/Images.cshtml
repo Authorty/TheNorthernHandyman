@@ -9,7 +9,22 @@
 </head>
 
 <div class="jumbotron">
-    <div class="gallery">
+
+
+    @foreach (var image in (IEnumerable<string>)ViewBag.Images)
+    {
+        if (image.StartsWith("~/Content/Images/LimbRem"))
+        {<p>Limb Removal</p>
+        <img src="@Url.Content(image)" alt="TheNorthernHandyman" />
+        }
+        if (image.StartsWith("~/Content/Images/Equip"))
+        {<p>Limb Removal</p>
+        <img src="@Url.Content(image)" alt="TheNorthernHandyman" />
+        }
+
+    }
+
+    @*<div class="gallery">
         <div class="row">
             <div class="col-lg-3">
                 <a href="~/Content/Images/BobCat_Tree.jpg" data-title="Test" data-lightbox="Vacation">
@@ -26,27 +41,22 @@
                     <img src="~/Content/Images/Johndeere Sweeper.jpg" width="200" class="img-thumbnail" />
                 </a>
         </div>
-    </div>
+    </div>*@
 </div>
 
 
-            @foreach (var image in (IEnumerable<string>)ViewBag.Images)
+            @*@foreach (var image in (IEnumerable<string>)ViewBag.Images)
             {
 
                 <img src="@Url.Content(image)" alt="TheNorthernHandyman" />
 
-            }
+            }*@
 
 
 
-</div>
+
 
 
 <p><small>&copy; @DateTime.Now.Year - TheNorthernHandyman|Contact </small></p>
 
-@foreach (FileInfo fi in Model)
-{
-    string test = fi.FullName;
-    <img src="@Url.Content(test)" />
 
-}
