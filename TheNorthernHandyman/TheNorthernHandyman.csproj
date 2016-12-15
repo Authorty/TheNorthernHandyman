@@ -331,6 +331,7 @@
     <Content Include="Views\Home\MowingPictures.cshtml" />
     <Content Include="Views\Home\Equipment.cshtml" />
     <Content Include="Views\Home\ContactEmail.cshtml" />
+    <Content Include="Views\Home\FireWood.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
