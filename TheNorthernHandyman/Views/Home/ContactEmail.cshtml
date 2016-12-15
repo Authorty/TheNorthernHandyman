@@ -4,14 +4,14 @@
     ViewBag.Title = "ContactEmail";
 }
 
-<h2>ContactEmail</h2>
-@if (TempData["Validation"] != null)
+<h2>Contact Us</h2>
+@*@if (TempData["Validation"] != null)
 {
     <p style="color:red">@TempData["Validation"]</p>
 }
 @if(ViewBag.Name == "" || ViewBag.Name == null)
 {
-}
+}*@
 
 @using (Html.BeginForm("ContactEmail", "Home", new { ReturnUrl = ViewBag.ReturnUrl }, FormMethod.Post, new { @id = "contact-form", role = "form" }))
 {

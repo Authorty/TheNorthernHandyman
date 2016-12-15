@@ -16,55 +16,57 @@ namespace TheNorthernHandyman.Controllers
 
         public ActionResult ContactEmail(ContactEmailModels e)
         {
-            string ValidationMessage = String.Empty;
+            
+                string ValidationMessage = String.Empty;
 
-            ViewBag.Name = String.Empty;
-            ViewBag.Email = String.Empty;
-            ViewBag.Phone = String.Empty;
-            ViewBag.Message = String.Empty;
+                ViewBag.Name = String.Empty;
+                ViewBag.Email = String.Empty;
+                ViewBag.Phone = String.Empty;
+                ViewBag.Message = String.Empty;
 
 
-            if (!String.IsNullOrEmpty(e.Name) && !String.IsNullOrEmpty(e.Message) && !String.IsNullOrEmpty(e.Phone) && !String.IsNullOrEmpty(e.Email))
-            {
-                var emailmessage = new System.Web.Mail.MailMessage()
+                if (!String.IsNullOrEmpty(e.Name) && !String.IsNullOrEmpty(e.Message) && !String.IsNullOrEmpty(e.Phone) && !String.IsNullOrEmpty(e.Email))
                 {
-                    Subject = e.Name,
-                    Body = "From: " + e.Name + "\n Phone Number: " + e.Phone + "\n Job Description: " + e.Message,
-                    From = "thenorthernhandyman@thenorthernhandyman.org",
-                    To = "itismejody@gmail.com",
-                    BodyFormat = MailFormat.Text,
-                    Priority = System.Web.Mail.MailPriority.High
-                };
+                    var emailmessage = new System.Web.Mail.MailMessage()
+                    {
+                        Subject = e.Name,
+                        Body = "From: " + e.Name + "\n Phone Number: " + e.Phone + "\n Job Description: " + e.Message,
+                        From = "thenorthernhandyman@thenorthernhandyman.org",
+                        To = "itismejody@gmail.com",
+                        BodyFormat = MailFormat.Text,
+                        Priority = System.Web.Mail.MailPriority.High
+                    };
 
-                System.Web.Mail.SmtpMail.SmtpServer = "relay-hosting.secureserver.net";
-                SmtpMail.Send(emailmessage);
-                MessageBox("Email sent successfully!");
-                return RedirectToAction("Index", "Home", null);
+                    System.Web.Mail.SmtpMail.SmtpServer = "relay-hosting.secureserver.net";
+                    SmtpMail.Send(emailmessage);
+                    MessageBox("Email sent successfully!");
+                    return RedirectToAction("Index", "Home", null);
 
-            }
+                }
+            
 
-            if (e.Name == "" || e.Name == null)
-            {
-                ViewBag.Name = "Please add your name";
-            }
-
-
-            if (e.Phone == "" || e.Phone == null)
-            {
-                ViewBag.Phone = "Please add your phone";
-
-            }
+            //if (e.Name == "" || e.Name == null)
+            //{
+            //    ViewBag.Name = "Please add your name";
+            //}
 
 
-            if (e.Message == "" || e.Message == null)
-            {
-                ViewBag.Message = "Please add your Message";
+            //if (e.Phone == "" || e.Phone == null)
+            //{
+            //    ViewBag.Phone = "Please add your phone";
 
-            }
-            if (e.Email == "" || e.Message == null)
-            {
-                ViewBag.Email = "Please Add your Email";
-            }
+            //}
+
+
+            //if (e.Message == "" || e.Message == null)
+            //{
+            //    ViewBag.Message = "Please add your Message";
+
+            //}
+            //if (e.Email == "" || e.Message == null)
+            //{
+            //    ViewBag.Email = "Please Add your Email";
+            //}
 
             // TempData["Validation"] = ValidationMessage;
             //return new JavaScriptResult { Script = "alert('" + ValidationMessage + "');" };
