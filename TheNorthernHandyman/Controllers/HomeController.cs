@@ -185,6 +185,11 @@ namespace TheNorthernHandyman.Controllers
             return View();
 
         }
+        public ActionResult FireWood()
+        {
+            return View();
+
+        }
 
 
     }
