@@ -21,8 +21,21 @@
 input,
 select,
 textarea {
-    max-width: 280px;
+  
+  max-width: 400px;
 }
+.form-control
+{
+    min-width: 325px;
+
+}
+
+.message .form-control {
+    min-height:200px;
+    min-width:400px;
+}
+
+
 .jumbotron .SmallHeader
 {
     font-size:35px;
@@ -30,5 +43,9 @@ textarea {
 .SmallHeader
 {
      font-size:25px;
+}
+.form-control textarea text
+{
+
 }
 
