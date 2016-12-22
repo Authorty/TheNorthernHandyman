@@ -4,41 +4,47 @@
 }
 
 
-<div class="jumbotron">
-   
+<div class="jumbotron"> 
     <br />
     <div class="gallery">
-        <h1>Skid Steer Gallery</h1>
-        <div class="row">
+        <h1>
+            Skid Steer Work
+        </h1>
+    <div class="row">
+        <div class="col-lg-3">
             <h5>Skid Steer-Snow Blower</h5>
-                <div class="col-lg-3">
-                    <a href="~/Views/Home/SkidSteerGallery.cshtml" data-title="Skid Steer- 84 &#34 Snow Blower Attachment" data-lightbox="SkidSteerSnowRemoval">
-                        <img src="~/Content/Images/SnowRemoval.PNG" width="200" height="45" class="img-thumbnail" />
-                    </a>
-                   
-            <h5> Parking Lot/Driveway Sweeping</h5>
-               
-                    <a href="~/Views/Home/SweeperGallery.cshtml" data-title="RetaingWall During" data-lightbox="SkidSteerSweeper">
-                        <img src="~/Content/Images/Sweeper.PNG" width="200" height="45" class="img-thumbnail" />
-                    </a>
-             
-        
-            <h5> LandScaping</h5>
-               
-                    <a href="~/Views/Home/LandscapingGallery.cshtml" data-title="RetaingWall During" data-lightbox="SkidSteerLandScaping">
-                        <img src="~/Content/Images/RetainingWall3.jpg" width="200" height="45" class="img-thumbnail" />
-                    </a>
-          </div>
-              
+            <a href="http://www.thenorthernhandyman.org/Home/SkidSteerGallery"  data-title="Skid Steer- 84 &#34 Snow Blower Attachment" >
+                <img src="~/Content/Images/SnowRemoval.PNG" width="200" height="45" class="img-thumbnail"  />
+            </a>
+        </div>
+            <div class="col-lg-3">
+                <h5> 
+                    Parking Lot/Driveway Sweeping
+                </h5>
+                
+                <a href="~/Views/Home/SweeperGallery.cshtml" data-title="RetaingWall During" data-lightbox="SkidSteerSweeper">
+                    <img src="~/Content/Images/Sweeper.PNG" width="200" height="45" class="img-thumbnail" />
+                </a>
+            </div>
+            <div class="col-lg-3">
+                <h5>
+                    LandScaping
+                </h5>
+                <a href="~/Views/Home/LandscapingGallery.cshtml" data-title="RetaingWall During" data-lightbox="SkidSteerLandScaping">
+                    <img src="~/Content/Images/RetainingWall3.jpg" width="200" height="45" class="img-thumbnail" />
+                </a>
+            </div>              
         </div>
     </div>
-    <br />
-    @Html.ActionLink(" « BACK", "Services", "Home", new { area = "" }, new { @class = "btn btn-link btn-xs" })
-    <br />
 </div>
-    <footer>
-        <p>
-            <small>&copy; @DateTime.Now.Year - TheNorthernHandyman | Skid Steer</small><br />
-            <small> Town of New London - Wauapaca County<br /></small>
-        </p>
+
+@Html.ActionLink(" « BACK", "Services", "Home", new { area = "" }, new { @class = "btn btn-link btn-xs" })
+<br />
+<br />
+<br />
+<footer>
+    <p>
+        <small>&copy; @DateTime.Now.Year - TheNorthernHandyman | Services</small><br />
+        <small> Town of New London - Wauapaca County<br /></small>
+    </p>
 </footer>

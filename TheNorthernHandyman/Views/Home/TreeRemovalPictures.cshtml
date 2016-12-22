@@ -1,47 +1,51 @@
 ﻿
 @{
-    ViewBag.Title = "Tree Removal | TheNorthernHandyman";
+    ViewBag.Title = "TreeRemoval | TheNorthernHandyman";
 }
-
+<h1>TreeRemoval</h1>
 <div class="jumbotron">
-
     <br />
+
     <div class="gallery">
-            <div class="row">
-                <h1>TreeRemoval</h1>
-                <div class="col-lg-3">
-                    <a href="~/Views/Home/TreeRemovalGallery.cshtml" data-title="" data-lightbox="TreeRemoval">
-                        <img src="~/Content/Images/TreeRemoval1.jpg" width="200" height="45" class="img-thumbnail" />
-                    </a>
-                
-        <h3>Trimming</h3>
-               
+        <div class="row">
+            <div class="col-lg-3">
+                <h3>
+                    TreeRemoval
+                </h3>
+
+                <a href="~/Views/Home/TreeRemovalGallery.cshtml" data-title="" data-lightbox="TreeRemoval">
+                    <img src="~/Content/Images/TreeRemoval1.jpg" width="200" height="45" class="img-thumbnail" />
+                </a>
+            </div>
+            <div class="col-lg-3">
+                <h3>
+                    Trimming
+                </h3>
                     <a href="~/Views/Home/TrimmingGallery.cshtml" data-title="" data-lightbox="Trimming">
                         <img src="~/Content/Images/LimbRemoval1.jpg" width="200" height="45" class="img-thumbnail" />
                     </a>
-               
-            <h3>StumpGrinding&CleanUp</h3>
-          
-                <a href="~/Views/Home/StumpGrindingGallery.cshtml" data-title="Before" data-lightbox="StumpGrinding&CleanUp">
-                    <img src="~/Content/Images/StumpGrindingCleanup1.jpg" width="200" height="45" class="img-thumbnail" />
-                </a>
             </div>
-
-
-
-           
+             <div class="col-lg-3">
+                 <h3>
+                    StumpGrinding&CleanUp
+                 </h3>
+                    <a href="~/Views/Home/StumpGrindingGallery.cshtml" data-title="Before" data-lightbox="StumpGrinding&CleanUp">
+                        <img src="~/Content/Images/StumpGrindingCleanup1.jpg" width="200" height="45" class="img-thumbnail" />
+                    </a>
+                </div>
         </div>
     </div>   
-    <br />
-   @Html.ActionLink(" « BACK", "Services", "Home", new { area = "" }, new { @class = "btn btn-link btn-xs" })
-    <br />
 </div>
- <footer>
-     <p>
-         <small>&copy; @DateTime.Now.Year - TheNorthernHandyman | Tree Removal</small><br />
-         <small> Town of New London - Wauapaca County<br /></small>
-     </p>
-</footer>          
+   @Html.ActionLink(" « BACK", "Services", "Home", new { area = "" }, new { @class = "btn btn-link btn-xs" })
+<br />
+<br />
+<br />
+<footer>
+    <p>
+        <small>&copy; @DateTime.Now.Year - TheNorthernHandyman | Services</small><br />
+        <small> Town of New London - Wauapaca County<br /></small>
+    </p>
+</footer>         
              
 
 

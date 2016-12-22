@@ -4,15 +4,14 @@
     
 }
 
-
 <h1 class="SmallHeader">@ViewBag.Message</h1>
 
-
 <div class="jumbotron">
-
    <div class="row">
      <div class="col-md-4">
-         <h2><strong>Skid Steer Work</strong></h2>
+         <h2>
+            <strong>Skid Steer Work</strong>
+         </h2>
          <p>
              <h4>
                  Snow blowing &plowing. <br />
@@ -21,49 +20,58 @@
                  Drive way reconstruction.<br />
                  Landscaping. <br />
              </h4>
-         @Html.ActionLink("Pictures »", "SkidSteerPictures", "Home", new { area = "" } , new { @class = "btn btn-default btn-xs" })
-            </p>
-         
-         <h2><strong> Tree Removal</strong></h2>
-         <p>
-             <h4>
-                 Trimming. <br />
-                 Stump grinding & Clean up. <br />
-                 Storm Clean up.<br />
-                 Brush removal and chipping. <br />
-                 Small & Large trees. <br />
-             </h4>
-         @Html.ActionLink("Pictures »", "TreeRemovalPictures", "Home", new { area = "" }, new { @class = "btn btn-default btn-xs" })
-               </p>
-     </div>
-     
+            @Html.ActionLink("See More »", "SkidSteerPictures", "Home", new { area = "" } , new { @class = "btn btn-default btn-xs" })
+         </p>
+         </div>
+         <div class="col-md-4">
+             <h2>
+                 <strong> Tree Removal</strong>
+             </h2>
+                <p>
+                    <h4>
+                        Trimming. <br />
+                        Stump grinding & Clean up. <br />
+                        Storm Clean up.<br />
+                        Brush removal and chipping. <br />
+                        Small & Large trees. <br />
+                    </h4>
+                    @Html.ActionLink("See More »", "TreeRemovalPictures", "Home", new { area = "" }, new { @class = "btn btn-default btn-xs" })
+                </p>
+        </div>  
+        <div class="col-md-4">
+           <h2>
+                <strong>Snow Removal</strong>
+           </h2>
+                <p>
+                    <h4>
+                        Plowing small and large lots. <br />
+                        Sidewalk Snow Removal. <br />
+                        Snow blowing. <br />
+                        Snow Shoveling.<br />
+                        Salting. <br />
+                        84″ skid steer snow blowing & 8′ bucket. <br />
+                        V bottom salter.<br />
+                    </h4>
+                    @Html.ActionLink("See More »", "SnowRemovalPictures", "Home", new { area = "" }, new { @class = "btn btn-default btn-xs" })
+                </p>
+        </div>
        <div class="col-md-4">
-           <h2><strong>Snow Removal</strong></h2>
-           <p>
-               <h4>
-                   Plowing small and large lots. <br />
-                   Sidewalk Snow Removal. <br />
-                   Snow blowing. <br />
-                   Snow Shoveling.<br />
-                   Salting. <br />
-                   84″ skid steer snow blowing & 8′ bucket. <br />
-                   V bottom salter.<br />
-               </h4>
-               @Html.ActionLink("Pictures »", "SnowRemovalPictures", "Home", new { area = "" }, new { @class = "btn btn-default btn-xs" })
-           </p>
-           <h2><strong>Mowing</strong> </h2>
-           <p>
-               <h4>
-                   Commercial 60″ zero turn mower w/ vacuum. <br />
-                   Weed whacking. <br />
-                   Leaf removal. <br />
-               </h4>
-           @Html.ActionLink("Pictures »", "MowingPictures", "Home", new { area = "" }, new { @class = "btn btn-default btn-xs" })
-           </p>
+           <h2>
+               <strong>Mowing</strong>
+           </h2>
+                <p>
+                    <h4>
+                        Commercial 60″ zero turn mower w/ vacuum. <br />
+                        Weed whacking. <br />
+                        Leaf removal. <br />
+                    </h4>
+                    @Html.ActionLink("See More »", "MowingPictures", "Home", new { area = "" }, new { @class = "btn btn-default btn-xs" })
+                </p>
        </div>
-
        <div class="col-md-4">
-           <h2><strong>Transport Cars, Tractors, Etc.</strong></h2>
+           <h2>
+                <strong>Transport Cars, Tractors, Etc.</strong>
+           </h2>
                 <p>
                     <h4>
                         10K 14ft.Dump trailer.<br />
@@ -72,8 +80,8 @@
                 </p>
        </div>    
      </div>
-    @Html.ActionLink(" « BACK", "About", "Home", new { area = "" }, new { @class = "btn btn-link btn-xs" })
 </div>
+@Html.ActionLink(" « BACK", "About", "Home", new { area = "" }, new { @class = "btn btn-link btn-xs" })
 <br />
 <br />
 <br />

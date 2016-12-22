@@ -2,32 +2,37 @@
 @{
     ViewBag.Title = "Snow Removal | TheNorthernHandyman";
 }
-    <h1 class="SmallHeader">Snow Removal</h1>
-     <div class="jumbotron">
-         <p>We Believe Snow removal should be available to everyone so we provide both all-season and one-time snow removal.
-        Now you never have to worry about braving the cold and handling the snow on your own.</p>
+
+ <h1 class="SmallHeader">Snow Removal</h1>
+<div class="jumbotron">
+    <p>
+        <h4>
+            We Believe Snow removal should be available to everyone,
+            so we provide both all-season and one-time snow removal.
+            Now you never have to worry about braving the cold and 
+            handling the snow on your own.
+        </h4>
+    </p>
     <br />
-    <br />
-  
-    @Html.ActionLink(" « BACK", "Services", "Home", new { area = "" }, new { @class = "btn btn-link btn-xs" })
     <br />
     <div class="gallery">
         <div class="row">
             <div class="col-lg-3">
-                @*This Referecnes the Content/ Images Folder*@    @*The Data Lightbox is the Grouping of the picutres.  Its the album name psshh*@
-                <a href="~/Content/Images/SnowRemoval.PNG" data-title="Skid Steer-Snow Blower Attachment" data-lightbox="Snow Removal">
+                @*This Referecnes the Content/Images Folder*@    @*The Data Lightbox is the Grouping of the picutres.  the album name *@
+                <a href="~/Content/Images/@*SnowRemoval.PNG*@" data-title="Skid Steer-Snow Blower Attachment" data-lightbox="Snow Removal">
                     <img src="~/Content/Images/SnowRemoval.PNG" width="200" height="45" class="img-thumbnail" />
                 </a>
             </div>
         </div>
     </div>
-    <br />
+</div>
     @Html.ActionLink(" « BACK", "Services", "Home", new { area = "" }, new { @class = "btn btn-link btn-xs" })
     <br />
-</div>
-    <footer>
-        <p>
-            <small>&copy; @DateTime.Now.Year - TheNorthernHandyman | Snow Removal</small><br />
-            <small> Town of New London - Wauapaca County<br /></small>
-        </p>
-    </footer>
+    <br />
+    <br />
+<footer>
+    <p>
+        <small>&copy; @DateTime.Now.Year - TheNorthernHandyman | Services</small><br />
+        <small> Town of New London - Wauapaca County<br /></small>
+    </p>
+</footer> 
