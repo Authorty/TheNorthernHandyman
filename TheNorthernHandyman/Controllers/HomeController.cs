@@ -128,7 +128,61 @@ namespace TheNorthernHandyman.Controllers
             return View();
 
         }
+        public ActionResult VideoSlider()
+        {
+            ViewBag.Message = "Videos";
 
+            return View();
+        }
+        public ActionResult Employment()
+        {
+            ViewBag.Message = "Would You Like To Join Our Team";
+            return View();
+
+        }
+        public ActionResult LandscapingGallery()
+        {
+            
+            return View();
+
+        }
+        public ActionResult SweeperGallery()
+        {
+            
+            return View();
+
+        }
+        public ActionResult SkidSteerGallery()
+        {
+            
+            return View();
+
+        }
+        public ActionResult TreeRemovalGallery()
+        {
+           
+            return View();
+
+        }
+        public ActionResult TrimmingGallery()
+        {
+           
+            return View();
+
+        }
+        public ActionResult StumpGrindingGallery()
+        {
+          
+            return View();
+
+        }
+        public ActionResult MowingGallery()
+        {
+           
+            return View();
+
+        }
+        
 
     }
 

@@ -244,6 +244,11 @@
     <Content Include="Content\Images\Trimming1.jpg" />
     <Content Include="Content\Images\Trimming2.jpg" />
     <Content Include="Content\Images\Trimming3.jpg" />
+    <Content Include="Content\Images\Videos\FireWood.wmv" />
+    <Content Include="Content\Images\Videos\SkidSteer1.wmv" />
+    <Content Include="Content\Images\Videos\StumpGrinding1.wmv" />
+    <Content Include="Content\Images\Videos\Trimming1.wmv" />
+    <Content Include="Content\Images\Videos\Trimming2.wmv" />
     <Content Include="Images\close.png" />
     <Content Include="Content\Images\Johndeere Sweeper.jpg" />
     <Content Include="Images\loading.gif" />
@@ -331,6 +336,15 @@
     <Content Include="Views\Home\Equipment.cshtml" />
     <Content Include="Views\Home\ContactEmail.cshtml" />
     <Content Include="Views\Home\FireWood.cshtml" />
+    <Content Include="Views\Home\VideoSlider.cshtml" />
+    <Content Include="Views\Home\Employment.cshtml" />
+    <Content Include="Views\Home\SkidSteerGallery.cshtml" />
+    <Content Include="Views\Home\SweeperGallery.cshtml" />
+    <Content Include="Views\Home\LandscapingGallery.cshtml" />
+    <Content Include="Views\Home\TreeRemovalGallery.cshtml" />
+    <Content Include="Views\Home\TrimmingGallery.cshtml" />
+    <Content Include="Views\Home\StumpGrindingGallery.cshtml" />
+    <Content Include="Views\Home\MowingGallery.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

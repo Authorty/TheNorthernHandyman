@@ -2,12 +2,16 @@
 @{
     ViewBag.Title = "Snow Removal | TheNorthernHandyman";
 }
-<h1 class="SmallHeader">Snow Removal</h1>
-<div class="jumbotron">
+    <h1 class="SmallHeader">Snow Removal</h1>
+     <div class="jumbotron">
+         <p>We Believe Snow removal should be available to everyone so we provide both all-season and one-time snow removal.
+        Now you never have to worry about braving the cold and handling the snow on your own.</p>
     <br />
+    <br />
+  
     @Html.ActionLink(" « BACK", "Services", "Home", new { area = "" }, new { @class = "btn btn-link btn-xs" })
     <br />
-    <div class="gallery">    
+    <div class="gallery">
         <div class="row">
             <div class="col-lg-3">
                 @*This Referecnes the Content/ Images Folder*@    @*The Data Lightbox is the Grouping of the picutres.  Its the album name psshh*@
@@ -21,6 +25,9 @@
     @Html.ActionLink(" « BACK", "Services", "Home", new { area = "" }, new { @class = "btn btn-link btn-xs" })
     <br />
 </div>
-<footer>
-    <p><small>&copy; @DateTime.Now.Year - TheNorthernHandyman | Snow Removal</small> </p>
-</footer>
+    <footer>
+        <p>
+            <small>&copy; @DateTime.Now.Year - TheNorthernHandyman | Snow Removal</small><br />
+            <small> Town of New London - Wauapaca County<br /></small>
+        </p>
+    </footer>

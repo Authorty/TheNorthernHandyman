@@ -7,6 +7,8 @@
     ViewBag.Title = "TheNorthernHandyman";
     <h3>@ViewBag.Message</h3>
 }
+ 
+            
 
 <div class="jumbotron">
 
@@ -14,6 +16,13 @@
     <p class="lead">
         Is a home based buisness and is centered around focusing on doing
         the job right the FIRST time with being safety conscious and curtious.
+    <p>
+
+            The Northern Handyman goes beyond just mowing the lawn in the summer season
+            by being able to provide you with affordable snow removal services during the winter cold seasons.
+            We provide affordable all year round services Or just one time seasonal services
+    </p>
+    <p>
         Feel free to contact us for any services listed on our Services page.
         We are Fully insured and our company strongly believes in being
         enviornmentally friendly.We do not burn debris or leave it lying around.
@@ -24,13 +33,13 @@
     <p><a class="btn btn-default btn-xs" href="https://www.facebook.com/NorthernHandyman/"><small>Find Out More</small> &raquo;</a></p>
 
 </div>
-
-<div>
 <div class="list-group">
     <a href="#" class="list-group-item">
-        <h4 class="list-group-item-heading"><strong>SPECIAL:</strong> 10% Discount for Veterans and Senior Citizens! 20% for disabled.</h4>
+        <h4 class="list-group-item-heading"><strong>SPECIAL:</strong> Ask About our 10% Discount for Veterans and Senior Citizens! Or Our 20% for disabled.</h4>
     </a>
-    </div>
+</div>
+<div>
+
 
     <div class="row">
 
@@ -39,8 +48,10 @@
             <p>
                 Landscaping has been my passion for many years, its more then
                 just clearing out existing shrubbery, but what it can be shaped into.
+                We'll help you from design to installation.
+                Mulch, stone, plants...ect.
                 I do every job as if it was my home, which means i’m going to do
-                it right the first time.
+                it right the first time. 
             </p>
         </div>
 
@@ -58,7 +69,7 @@
             <p>
                 Living in Wisconsin, Snow is a part of life. The northern handyman
                 can take the stress of removing snow at your business or home and make
-                it a thing of the past. We have 2 plow’s and a skid steer with
+                it a thing of the past. We have plows and a skid steer with
                 an 84″ bucket for all your snow removal needs.
             </p>
         </div>
@@ -87,14 +98,61 @@
                             <strong>*Free* </strong> Delivery on purchases of 3-6 Face Cords within a 25 mile radius of New London WI,
                         </small>
                     </p>
-                    @Html.ActionLink("Pictures »", "FireWood", "Home", new { area = "" }, new { @class = "btn btn-default btn-xs" })
+                    @Html.ActionLink("More »", "FireWood", "Home", new { area = "" }, new { @class = "btn btn-default btn-xs" })
                     <br />
                     <br />
                 </div>
             </div>
         </div>
-        
 
+    </div>
+@*<div id="wrapper"*@
+     <!--Sidebar-->
+
+    @*<div id="Sidebar-Wrapper">
+
+
+        <ul class="sidebar-nav">
+            <li><a href="#"> Home</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#"> About</a></li>
+        </ul>
+        We serve the Fox Cities, WI:
+
+        - Appleton
+        - Combined Locks
+        - Kaukauna
+        - Kimberly
+        - Little Chute
+        - Menasha
+        - Neenah
+        - Buchanan
+        - Grand Chute
+        - Greenville
+        - Harrison
+
+        Don't See Your City Listed?
+        We are more than happy to travel to the outlying areas for an additional fee to cover our travel costs.
+        Spacer
+        Contact us for details.*@
+    </div>
+
+<!--Page Content-->
+
+    @*<div id="page-content-wrapper">
+        <div class="container-fluid">
+            <a href="#"class="btn btn-success" id="menu-toggle"> Toggle Menu</a>
+        </div>
+    </div>*@
+<!-- Menu Toggle script-->
+@*<script>
+    $("#menu-toggle").click( funtion (e) {
+e.preventDefult();
+    $("#wrapper").toggleClass("toggled");
+    });
+        </script>*@
         <footer>
-            <p><small>&copy; @DateTime.Now.Year - TheNorthernHandyman | Home</small> </p>
+            <p><small>&copy; @DateTime.Now.Year - TheNorthernHandyman | Home</small> <br />
+            <small> Town of New London - Wauapaca County<br /></small>
+            </p>
         </footer>

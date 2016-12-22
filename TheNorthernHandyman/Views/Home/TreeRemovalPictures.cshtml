@@ -2,158 +2,45 @@
 @{
     ViewBag.Title = "Tree Removal | TheNorthernHandyman";
 }
-<h1 class="SmallHeader">Tree Removal</h1>
+
 <div class="jumbotron">
-   @Html.ActionLink(" « BACK", "Services", "Home", new { area = "" }, new { @class = "btn btn-link btn-xs" })
+
     <br />
     <div class="gallery">
-        
             <div class="row">
+                <h1>TreeRemoval</h1>
                 <div class="col-lg-3">
-                    <a href="~/Content/Images/TreeRemoval1.jpg" data-title="" data-lightbox="Trimming">
+                    <a href="~/Views/Home/TreeRemovalGallery.cshtml" data-title="" data-lightbox="TreeRemoval">
                         <img src="~/Content/Images/TreeRemoval1.jpg" width="200" height="45" class="img-thumbnail" />
                     </a>
-                </div>
-                <div class="col-lg-3">
-                    <a href="~/Content/Images/TreeRemoval2.jpg" data-title="" data-lightbox="Trimming">
-                        <img src="~/Content/Images/TreeRemoval2.jpg" width="200" height="45" class="img-thumbnail" />
-                    </a>
-                </div>
-                <div class="col-lg-3">
-                    <a href="~/Content/Images/TreeRemoval3.jpg" data-title="" data-lightbox="Trimming">
-                        <img src="~/Content/Images/TreeRemoval3.jpg" width="200" height="45" class="img-thumbnail" />
-                    </a>
-                </div>
-            </div>
-    </div>
-    <div class="gallery">
+                
         <h3>Trimming</h3>
-            <div class="row">
-                <div class="col-lg-3">
-                    <a href="~/Content/Images/LimbRemoval1.jpg" data-title="" data-lightbox="Trimming">
+               
+                    <a href="~/Views/Home/TrimmingGallery.cshtml" data-title="" data-lightbox="Trimming">
                         <img src="~/Content/Images/LimbRemoval1.jpg" width="200" height="45" class="img-thumbnail" />
                     </a>
-                </div>
-                <div class="col-lg-3">
-                    <a href="~/Content/Images/LimbRemoval2.jpg" data-title="" data-lightbox="Trimming">
-                        <img src="~/Content/Images/LimbRemoval2.jpg" width="200" height="45" class="img-thumbnail" />
-                    </a>
-                </div>
-                <div class="col-lg-3">
-                    <a href="~/Content/Images/Trimming1.jpg" data-title="" data-lightbox="Trimming">
-                        <img src="~/Content/Images/Trimming1.jpg" width="200" height="45" class="img-thumbnail" />
-                    </a>
-                </div>
-                <div class="col-lg-3">
-                    <a href="~/Content/Images/Trimming2.jpg" data-title="Limb Removal" data-lightbox="Trimming">
-                        <img src="~/Content/Images/Trimming2.jpg" width="200" height="45" class="img-thumbnail" />
-                    </a>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-3">
-                    <a href="~/Content/Images/Trimming3.jpg" data-title="Limb Removal &#34Clean Up &#34" data-lightbox="Trimming">
-                        <img src="~/Content/Images/Trimming3.jpg" width="200" height="45" class="img-thumbnail" />
-                    </a>
-                </div>
-            </div>      
-    </div>
-    <div class="gallery">
-        <div class="row">
+               
             <h3>StumpGrinding&CleanUp</h3>
-            <div class="col-lg-3">
-                <a href="~/Content/Images/StumpGrinding1.jpg" data-title="Before" data-lightbox="StumpGrinding&CleanUp">
-                    <img src="~/Content/Images/StumpGrinding1.jpg" width="200" height="45" class="img-thumbnail" />
-                </a>
-            </div>
-            <div class="col-lg-3">
-                <a href="~/Content/Images/StumpGrindingCleanup1.jpg" data-title="After" data-lightbox="StumpGrinding&CleanUp">
+          
+                <a href="~/Views/Home/StumpGrindingGallery.cshtml" data-title="Before" data-lightbox="StumpGrinding&CleanUp">
                     <img src="~/Content/Images/StumpGrindingCleanup1.jpg" width="200" height="45" class="img-thumbnail" />
                 </a>
             </div>
-            <div class="col-lg-3">
-                <a href="~/Content/Images/StumpGrinding2.jpg" data-title="Before" data-lightbox="StumpGrinding&CleanUp">
-                    <img src="~/Content/Images/StumpGrinding2.jpg" width="200" height="45" class="img-thumbnail" />
-                </a>
-            </div>
-            <div class="col-lg-3">
-                <a href="~/Content/Images/StumpGrindingCleanup2.jpg" data-title="After" data-lightbox="StumpGrinding&CleanUp">
-                    <img src="~/Content/Images/StumpGrindingCleanup2.jpg" width="200" height="45" class="img-thumbnail" />
-                </a>
-            </div>
-            <div class="col-lg-3">
-                <a href="~/Content/Images/StumpGrinding3.jpg" data-title="Before" data-lightbox="StumpGrinding&CleanUp">
-                    <img src="~/Content/Images/StumpGrinding3.jpg" width="200" height="45" class="img-thumbnail" />
-                </a>
-            </div>
-            <div class="col-lg-3">
-                <a href="~/Content/Images/StumpGrindingCleanup3.jpg" data-title="After" data-lightbox="StumpGrinding&CleanUp">
-                    <img src="~/Content/Images/StumpGrindingCleanup3.jpg" width="200" height="45" class="img-thumbnail" />
-                </a>
-            </div>
-            <div class="col-lg-3">
-                <a href="~/Content/Images/StumpGrinding4.jpg" data-title="Before" data-lightbox="StumpGrinding&CleanUp">
-                    <img src="~/Content/Images/StumpGrinding4.jpg" width="200" height="45" class="img-thumbnail" />
-                </a>
-            </div>
-            <div class="col-lg-3">
-                <a href="~/Content/Images/StumpGrindingCleanup4.jpg" data-title="After" data-lightbox="StumpGrinding&CleanUp">
-                    <img src="~/Content/Images/StumpGrindingCleanup4.jpg" width="200" height="45" class="img-thumbnail" />
-                </a>
-            </div>
-            <div class="col-lg-3">
-                <a href="~/Content/Images/StumpGrinding5.jpg" data-title="Before" data-lightbox="StumpGrinding&CleanUp">
-                    <img src="~/Content/Images/StumpGrinding5.jpg" width="200" height="45" class="img-thumbnail" />
-                </a>
-            </div>
-            <div class="col-lg-3">
-                <a href="~/Content/Images/StumpGrindingCleanup5.jpg" data-title="After" data-lightbox="StumpGrinding&CleanUp">
-                    <img src="~/Content/Images/StumpGrindingCleanup5.jpg" width="200" height="45" class="img-thumbnail" />
-                </a>
-            </div>
-            <div class="col-lg-3">
-                <a href="~/Content/Images/StumpGrinding6.jpg" data-title="Before" data-lightbox="StumpGrinding&CleanUp">
-                    <img src="~/Content/Images/StumpGrinding6.jpg" width="200" height="45" class="img-thumbnail" />
-                </a>
-            </div>
-            <div class="col-lg-3">
-                <a href="~/Content/Images/StumpGrindingCleanup6.jpg" data-title="After" data-lightbox="StumpGrinding&CleanUp">
-                    <img src="~/Content/Images/StumpGrindingCleanup6.jpg" width="200" height="45" class="img-thumbnail" />
-                </a>
-            </div>
+
+
+
+           
         </div>
-    </div>
-    @*<div class="gallery">
-        <div class="row">
-            <h3>Brush Removal</h3>
-                <div class="col-lg-3">
-                    <a href="~/Content/Images/Brush.jpg" data-title="After" data-lightbox="Brush Removal">
-                        <img src="~/Content/Images/Brush.jpg" width="200" height="45" class="img-thumbnail" />
-                    </a>
-                </div>
-        </div>
-    </div>*@              
-    @*<div class="gallery">
-        <div class="row">
-            <h3>Small & Large Trees</h3>
-                <div class="col-lg-3">
-                    <a href="~/Content/Images/Brush.jpg" data-title="After" data-lightbox="Small & Large Trees">
-                        <img src="~/Content/Images/Brush.jpg" width="200" height="45" class="img-thumbnail" />
-                    </a>
-                </div>
-                <div class="col-lg-3">
-                    <a href="~/Content/Images/BrushRemoval.jpg" data-title="After" data-lightbox="Small & Large Trees">
-                        <img src="~/Content/Images/BrushRemoval.jpg" width="200" height="45" class="img-thumbnail" />
-                    </a>
-                </div>
-         </div>
-    </div>*@
+    </div>   
     <br />
    @Html.ActionLink(" « BACK", "Services", "Home", new { area = "" }, new { @class = "btn btn-link btn-xs" })
     <br />
- </div>
+</div>
  <footer>
-    <p><small>&copy; @DateTime.Now.Year - TheNorthernHandyman | Tree Removal</small> </p>
+     <p>
+         <small>&copy; @DateTime.Now.Year - TheNorthernHandyman | Tree Removal</small><br />
+         <small> Town of New London - Wauapaca County<br /></small>
+     </p>
 </footer>          
              
 
