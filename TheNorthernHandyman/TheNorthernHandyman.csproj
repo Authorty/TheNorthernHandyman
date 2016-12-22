@@ -333,7 +333,7 @@
     <Content Include="Views\Home\SnowRemovalPictures.cshtml" />
     <Content Include="Views\Home\TreeRemovalPictures.cshtml" />
     <Content Include="Views\Home\MowingPictures.cshtml" />
-    <Content Include="Views\Home\Equipment.cshtml" />
+    <Content Include="Views\Home\EquipmentGallery.cshtml" />
     <Content Include="Views\Home\ContactEmail.cshtml" />
     <Content Include="Views\Home\FireWood.cshtml" />
     <Content Include="Views\Home\VideoSlider.cshtml" />
@@ -345,6 +345,7 @@
     <Content Include="Views\Home\TrimmingGallery.cshtml" />
     <Content Include="Views\Home\StumpGrindingGallery.cshtml" />
     <Content Include="Views\Home\MowingGallery.cshtml" />
+    <Content Include="Views\Home\SnowRemovalGallery.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

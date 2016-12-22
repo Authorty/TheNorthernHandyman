@@ -118,7 +118,7 @@ namespace TheNorthernHandyman.Controllers
             return View();
 
         }
-        public ActionResult Equipment()
+        public ActionResult EquipmentGallery()
         {
             return View();
 
