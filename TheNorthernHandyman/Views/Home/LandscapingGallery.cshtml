@@ -1,8 +1,6 @@
-﻿using "bootsrtap.min.js"
+﻿
      
-      @{ ViewBag.Title = "Videos | TheNorthernHandyMan"; }
-
-
+      @{ ViewBag.Title = "Landscaping | TheNorthernHandyMan"; }
 
     <h1>LandscapingGallery</h1>
         <div class="container-fluid hero-slide">
@@ -13,8 +11,6 @@
                         <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
                         <li data-target="#myCarousel" data-slide-to="1"></li>
                         <li data-target="#myCarousel" data-slide-to="2"></li>
-                        <li data-target="#myCarousel" data-slide-to="3"></li>
-
                     </ol>
                     </div>
                     <!-- Wrapper for slides -->
@@ -43,6 +39,15 @@
                         <span class="sr-only">Next</span>
                     </a>
        
-
+@Html.ActionLink(" « BACK", "SkidSteerPictures", "Home", new { area = "" }, new { @class = "btn btn-link btn-xs" })
+<br />
+<br />
+<br />
+<footer>
+    <p>
+        <small>&copy; @DateTime.Now.Year - TheNorthernHandyman | Services</small><br />
+        <small> Town of New London - Wauapaca County<br /></small>
+    </p>
+</footer>
 
 

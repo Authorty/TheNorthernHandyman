@@ -182,7 +182,13 @@ namespace TheNorthernHandyman.Controllers
             return View();
 
         }
-        
+        public ActionResult SnowRemovalGallery()
+        {
+
+            return View();
+
+        }
+
 
     }
 

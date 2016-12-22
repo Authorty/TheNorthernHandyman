@@ -1,13 +1,12 @@
-﻿ using "bootsrtap.min.js"
+﻿
      
-@{ ViewBag.Title = "Trimming | TheNorthernHandyMan"; }
+@{ ViewBag.Title = "TrimmingGallery | TheNorthernHandyMan"; }
        <p>
                 We can help maintain your shrubs giving your yard an instant upgrade. We can
                 also help completely remove shrubs.
        </p>
 
-<body>
-    <h1>Trimming</h1>
+    <h1>Trimming Gallery</h1>
     <div class="container-fluid hero-slide">
          <div class="row">
     <div id="myCarousel" class="carousel slide" data-ride="carousel">
@@ -46,8 +45,14 @@
     </div>
              </div>
         </div>
-    </body>
-
-
-
-
+ 
+@Html.ActionLink(" « BACK", "TreeRemovalPictures", "Home", new { area = "" }, new { @class = "btn btn-link btn-xs" })
+<br />
+<br />
+<br />
+<footer>
+    <p>
+        <small>&copy; @DateTime.Now.Year - TheNorthernHandyman | Services</small><br />
+        <small> Town of New London - Wauapaca County<br /></small>
+    </p>
+</footer>
