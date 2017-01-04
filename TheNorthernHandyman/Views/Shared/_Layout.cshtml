@@ -9,11 +9,76 @@
 
 </head>
 <body>
+
+
+
     @Html.Partial("_NavigationBar")
 
     @*This is for the Left Column*@
 
+    <div class="sidebar1">
+        <img src="~/Content/NewImages/Equipment/WisconsinMap.png" />
+        <small> 
+        <br />
+        <br />
+        
+        <strong>Primary Location: <br /></strong>
+            - New London, WI <br /> 
+            <br />
+        <strong> Local towns near New London:<br /></strong>
+          
+            - Northport, WI<br />
+            - Sugar Bush, WI<br />
+            - Royalton, WI<br />
+            - Hortonville, WI<br />
+      
+            - Nowell, WI<br />
+            - North Readfield, WI<br />
+            - Stephensville, WI<br />
+            - Little Wolf, WI<br />
+         
+            - Readfield, WI<br />
+            - Shiocton, WI <br />
+            - Dale, WI<br />
+            - Bear Creek, WI<br />
+            <br />
+        <strong>Within a 25 mile radius of New London:</strong><br />
+            - Black Creek<br />
+            - Combined Locks<br />
+            - Kaukauna<br />
+            - Freedom<br />
+            - Kimberly<br />
+            - Little Chute<br />
+            - Nichols<br />
+            - Seymour<br />
+            - Shiocton<br />
+            - Appleton<br />
+            - Bear Creek<br />
+            - Big Falls<br />
+            - Clintonville<br />
+            - Dale<br />
+            - Embarrass<br />
+            - Fremont<br />
+            - Greenville<br />
+            - Hortonville<br />
+            - Iola<br />
+            <br />
+       <strong> We also serve the Fox Cities:<br /></strong>
 
+        - Appleton, WI<br />
+        - Combined Locks, WI<br />
+        - Kaukauna, WI<br />
+        - Kimberly, WI<br />
+        - Little Chute, WI<br />
+        - Menasha, WI<br />
+        - Grand Chute, WI<br />
+        - Greenville, WI<br />
+            <br />
+        <strong> Don't See Your City Listed?<br /></strong>
+        We are more than happy to travel to the outlying areas for an additional fee to cover our travel costs.<br />
+            <br />
+            <strong>Contact us for details.<br /></strong></small>
+    </div>
 
     <div class="container body-content">
         @RenderBody()
@@ -28,16 +93,14 @@
                         <span class="icon-bar"></span>
                     </button>
 
-
-
                 </div>
                 <div class="navbar-collapse collapse ">
                     <ul class="nav navbar-nav">
-                        <li>@Html.ActionLink("Home", "Index", "Home")</li>
-                        <li>@Html.ActionLink("About", "About", "Home")</li>
-                        <li>@Html.ActionLink("Services", "Services", "Home")</li>
-                        <li>@Html.ActionLink("Contact", "ContactEmail", "Home")</li>
-                        <li>@Html.ActionLink("Employment", "Employment", "Home")</li>                 
+                        <li>@Html.ActionLink("Home", "Index", "HomePage")</li>
+                        <li>@Html.ActionLink("About", "About", "HomePage")</li>
+                        <li>@Html.ActionLink("Services", "Services", "HomePage")</li>
+                        <li>@Html.ActionLink("Contacts", "ContactEmail", "HomePage")</li>
+                        <li>@Html.ActionLink("Employment", "Employment", "HomePage")</li>                 
                         
                     </ul>
                    
@@ -61,3 +124,6 @@
 
 
 </html>
+
+
+ 

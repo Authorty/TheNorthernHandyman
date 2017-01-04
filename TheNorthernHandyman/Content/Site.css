@@ -7,6 +7,7 @@
 .body-content {
     padding-left: 15px;
     padding-right: 15px;
+
 }
 
 /* Override the default bootstrap behavior where horizontal description lists 
@@ -48,4 +49,41 @@ textarea {
 {
 
 }
+.hero-slide
+{ 
+    margin-top:-20px;
 
+}
+
+
+
+
+.sidebar1, .sidebar2 {
+     height: 100%;
+    top:60px;
+    bottom:30px;
+   max-width: 200px;
+    position:absolute;
+     padding-left: 15px;
+    padding-right: 15px;
+     padding-top: 50px;
+    padding-bottom: 20px;
+ 
+    padding-top:60px;
+    position:absolute;
+    -moz-box-sizing:border-box;
+    -webkit-box-sizing:border-box;
+    -o-box-sizing:border-box;
+    -ms-box-sizing:border-box;
+    box-sizing:border-box;
+}
+
+.sidebar1 {
+    
+    left:0;
+    
+}
+
+.sidebar2 {
+    right: 0;
+}

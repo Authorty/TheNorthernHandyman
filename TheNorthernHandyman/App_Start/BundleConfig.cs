@@ -29,6 +29,7 @@ namespace TheNorthernHandyman
             bundles.Add(new StyleBundle("~/Content/css").Include(
                       "~/Content/bootstrap-sandstone.css",
                       "~/Content/lightbox.css",
+                      "~/Content/simple-sidebar.css",
                       "~/Content/site.css"));
         }
     }
