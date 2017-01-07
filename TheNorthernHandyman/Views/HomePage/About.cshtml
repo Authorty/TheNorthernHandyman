@@ -8,10 +8,11 @@
 <h3>@ViewBag.Message</h3>
 
 <div class="jumbotron">
+    
     <h1 class="SmallHeader">About My Business...</h1>
     <div class="row">
         <p>
-            <h4>
+            <h4 class="col-lg-10">
                 This is a family owned business with over 30 years of experience.
                 We have the capabilities to fill all your commercial or residential
                 landscaping needs. We can be flexible to accommodate what works best
@@ -19,13 +20,22 @@
                 to make sure the customer is completely satisfied.
             </h4>
 
-            <h4>
-                The Northern Handyman goes beyond just mowing the lawn in the summer season.
-                We can provide you with affordable snow removal services during the cold winter season
-                with affordable all year round services Or just one time seasonal services.
-            </h4>
+    </div>
+    <div class="row">
+        <h4 class="col-lg-10">
+            The Northern Handyman goes beyond just mowing the lawn in the summer season.
+            We can provide you with affordable snow removal services during the cold winter season
+            with affordable all year round services Or just one time seasonal services.
+        </h4>
         </p>
 
+    </div>
+</div>
+
+
+
+<div class="container">
+    <div class="row">
         <div class="col-md-4">
             <h2>
                 Equip.
@@ -62,19 +72,19 @@
             </p>
             @Html.ActionLink("See More »", "Services", "HomePage", new { area = "" }, new { @class = "btn btn-default btn-xs" })
         </div>
-
     </div>
-</div>
-<ul class="pager">
-    <li class="previous"><a href="http://www.TheNorthernHandyman.org/HomePage">« Back</a></li>
-    <li class="next"><a href="http://www.TheNorthernHandyman.org/HomePage/Services">Next »</a></li>
-</ul>
-<br />
-<br />
-<br />
-<footer>
-    <p>
-        <small>&copy; @DateTime.Now.Year - TheNorthernHandyman | About</small><br />
-        <small> Town of New London - Wauapaca County<br /></small>
-    </p>
-</footer>
+
+            <ul class="pager">
+                <li class="previous"><a href="http://www.TheNorthernHandyman.org/HomePage">« Back</a></li>
+                <li class="next"><a href="http://www.TheNorthernHandyman.org/HomePage/Services">Next »</a></li>
+            </ul>
+            <br />
+            <br />
+            <br />
+            <footer>
+                <p>
+                    <small>&copy; @DateTime.Now.Year - TheNorthernHandyman | About</small><br />
+                    <small> Town of New London - Wauapaca County<br /></small>
+                </p>
+            </footer>
+        </div>

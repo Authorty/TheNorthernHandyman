@@ -100,6 +100,19 @@
     background: none;
 }
 
+/*@media(min-width:>768px)
+ -any size smaller than 768 are styles for extra-small size devices*/
+
+/*@media(min-width:768px)
+ -styles for small size devices*/
+
+/*@media(min-width:992px)
+ -styles for large size devices*/
+
+/*@media(min-width:1200px)
+ -styles for large size devices*/
+
+
 @media(min-width:768px) {
     #wrapper {
         padding-left: 250px;

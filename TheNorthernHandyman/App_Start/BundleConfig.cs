@@ -22,7 +22,9 @@ namespace TheNorthernHandyman
             bundles.Add(new ScriptBundle("~/bundles/bootstrap").Include(
                       "~/Scripts/bootstrap.js",
                       "~/Scripts/respond.js",
-                      "~/Scripts/lightbox.js"));
+                      "~/Scripts/lightbox.js",
+                      "~/Scripts/jquery.js"
+                      ));
 
 
 

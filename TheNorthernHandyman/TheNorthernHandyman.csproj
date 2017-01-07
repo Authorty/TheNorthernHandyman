@@ -265,7 +265,9 @@
     <Content Include="Content\NewImages\TreeRemoval\Trimming\Trimming_Boom2.jpg" />
     <Content Include="Content\NewImages\TreeRemoval\Trimming\Videos\Trimming1.wmv" />
     <Content Include="Content\NewImages\TreeRemoval\Trimming\Videos\Trimming2.wmv" />
+    <Content Include="Content\portfolio-item.css" />
     <Content Include="Content\simple-sidebar.css" />
+    <Content Include="Content\thumbnail-gallery.css" />
     <Content Include="Images\close.png" />
     <Content Include="Images\loading.gif" />
     <Content Include="Images\next.png" />
@@ -288,6 +290,9 @@
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
     <None Include="Scripts\jquery.validate-vsdoc.js" />
+    <Content Include="Scripts\jquery.js" />
+    <Content Include="Scripts\jquery.portfolio.js" />
+    <Content Include="Scripts\jquery.thumbnail-gallery.js" />
     <Content Include="Scripts\jquery.validate.js" />
     <Content Include="Scripts\jquery.validate.min.js" />
     <Content Include="Scripts\jquery.validate.unobtrusive.js" />

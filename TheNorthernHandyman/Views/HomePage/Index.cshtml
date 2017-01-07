@@ -5,10 +5,11 @@
 
 }
 
-
+@* a "well" is simular to a jumbotron. the background 
+    color is still the same but the font is changed back to defult. *@
 
 <div class="jumbotron">
-        
+       
     <h1>The Northern Handyman...</h1>
     <p class="lead">
         Is a home based buisness and is centered around focusing on doing
@@ -29,30 +30,32 @@
 
     <a class="btn btn-default btn-xs" href="https://www.facebook.com/NorthernHandyman/"><small> Find Out More » </small> &raquo;</a>
 </div>
-
-<div class="list-group">
-    <a href="#" class="list-group-item">
-        <h4 class="list-group-item-heading">
+<div class="container">
+    <div class="well well-lg">
             <strong>SPECIAL:</strong> Ask About our 10% Discount for Veterans and Senior Citizens! Or Our 20% for disabled.
-        </h4>
-    </a>
-</div>
-
-<div class="row">
-    <div class="col-md-4">
-        <h2>
-            *Landscaping
-        </h2>
-        <p>
-            Landscaping has been my passion for many years, its more then
-            just clearing out existing shrubbery, but what it can be shaped into.
-            We'll help you from design to installation.
-            Mulch, stone, plants...ect.
-            I do every job as if it was my home, which means i’m going to do
-            it right the first time.
-        </p>
     </div>
-    <div class="col-md-4">
+
+@* A new row always pushes content down the page *@
+            <div class="row">
+    @* *In a bootstrap grid you can have up to 12 columns.*
+                -col=column
+                -md=medium
+                -4=4units *@
+             <div class="col-xs-8 col-sm-4">
+                <h2>
+                    *Landscaping
+                </h2>
+                <p>
+                    Landscaping has been my passion for many years, its more then
+                    just clearing out existing shrubbery, but what it can be shaped into.
+                    We'll help you from design to installation.
+                    Mulch, stone, plants...ect.
+                    I do every job as if it was my home, which means i’m going to do
+                    it right the first time.
+                </p>
+            </div>
+    @* *use the terms "push" and "pull" to move the placement of columns. *@
+    <div class="col-xs-6 col-sm-4">
         <h2>Tree Removal</h2>
         <p>
             We are able to cut and remove all sizes of tree, from small pines to
@@ -61,7 +64,7 @@
             look as if the tree was never there.
         </p>
     </div>
-    <div class="col-md-4">
+    <div class="col-xs-6 col-sm-4">
         <h2>Snow Removal</h2>
         <p>
             Living in Wisconsin, Snow is a part of life. The northern handyman
@@ -73,7 +76,7 @@
 </div>
 
 <div class="row">
-    <div class="col-md-4">
+    <div class="colo-xs-2 col-sm-4 col-md-4">
         <h2>*Mowing</h2>
         <p>
             We provide mowing services for commercial and residential locations.
@@ -82,12 +85,11 @@
             leaves or debris to keep your landscape looking professional and clean.
         </p>
     </div>
-    
-        <h1> * For Sale *</h1>
-            <div class="col-md-4">
 
+            <div class="col-xs-12 col-sm-6 col-md-4">
+                <h1> * For Sale *</h1>
             <h4>FireWood</h4>
-            
+
                 <small>
                     $60/Face Cord of mixed hardwood.<br />
                     Pick-Up or Delivery<br />
@@ -118,6 +120,6 @@
 </footer>
 
 
-
+    </div>
 
 
