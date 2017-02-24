@@ -237,6 +237,7 @@
     <Content Include="Content\NewImages\SkidSteer\Sweeper\SkidSteer_Sweeper.jpg" />
     <Content Include="Content\NewImages\SkidSteer\Sweeper\Sweeper.PNG" />
     <Content Include="Content\NewImages\SnowRemoval\SnowRemoval\SnowRemoval.PNG" />
+    <Content Include="Content\NewImages\Spring.jpg" />
     <Content Include="Content\NewImages\StumpGrinding\StumpGrinding1.jpg" />
     <Content Include="Content\NewImages\StumpGrinding\StumpGrinding2.jpg" />
     <Content Include="Content\NewImages\StumpGrinding\StumpGrinding3.jpg" />
@@ -265,7 +266,9 @@
     <Content Include="Content\NewImages\TreeRemoval\Trimming\Trimming_Boom2.jpg" />
     <Content Include="Content\NewImages\TreeRemoval\Trimming\Videos\Trimming1.wmv" />
     <Content Include="Content\NewImages\TreeRemoval\Trimming\Videos\Trimming2.wmv" />
+    <Content Include="Content\NewImages\trees_full_of_snow.jpg" />
     <Content Include="Content\portfolio-item.css" />
+    <Content Include="Content\sb-admin.css" />
     <Content Include="Content\simple-sidebar.css" />
     <Content Include="Content\thumbnail-gallery.css" />
     <Content Include="Images\close.png" />
